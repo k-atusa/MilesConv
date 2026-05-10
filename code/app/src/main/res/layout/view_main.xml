@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/vbox"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/all_text_card"
+        style="@style/card"
+        android:layout_marginTop="24dp">
+
+        <LinearLayout
+            style="@style/vbox"
+            android:padding="16dp">
+
+            <LinearLayout style="@style/hbox">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="type number...">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned|numberDecimal"
+                        android:textSize="22sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/text_unit"
+                    style="@style/title"
+                    android:layout_marginStart="16dp"
+                    android:text="Unit" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_result"
+                style="@style/title"
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:text="Result"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="32sp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- 3x3 Unit Buttons -->
+    <LinearLayout
+        style="@style/hbox"
+        android:layout_marginTop="32dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button11"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="in/cm"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button12"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ft/m"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button13"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="yd/m"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hbox"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button21"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="mi/km"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button22"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="oz/g"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button23"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="lb/kg"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/hbox"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="'F/'C"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button32"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="gal/L"
+            android:textSize="18dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button33"
+            style="@style/btnOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$/₩"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <View style="@style/spacer" />
+
+    <LinearLayout
+        style="@style/hbox"
+        android:gravity="end"
+        android:layout_marginBottom="48dp">
+
+        <ImageButton
+            android:id="@+id/btn_money"
+            style="@style/icon"
+            android:contentDescription="exchange_rate"
+            android:src="@drawable/icon_money" />
+    </LinearLayout>
+
+</LinearLayout>

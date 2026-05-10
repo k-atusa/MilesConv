@@ -17,7 +17,6 @@ project USAG: Metrics Vault android version
 ## Preset numbers
 
 - Default password: `0000`
-- Delete data: `0000000000000000`
 - Disable vault: set `exchange rate` as odd integer
 
 ## Build Executable
